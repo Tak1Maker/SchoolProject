@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+.white-content {
+    background: #e4e4e4;
+}
+
+#TypeWriter, h1{
+    position: relative;
+    font-family: 'Roboto', sans-serif; ;
+    color: #e4e4e4;
+    font-size: 70px;
+    top: 100px;
+}
+#TypeWriter{
+    bottom: 40px;
+}
 #video{
-    width:99.1vw;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
