@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./Components/theme";
 import Accueil from './Components/Accueil';
+import BuyPage from './Components/BuyPage';
+import BackgroundVideo from './Video/video.mp4'
+
 
 const StyledApp = styled.div`
   color: ${(props) => props.theme.fontColor};
@@ -20,7 +23,6 @@ function App() {
             <GlobalStyles />
             <StyledApp>
                 <div className='FirstPart'>
-                    <Accueil/>
                     <div className="toggleWrapper">
                         <input onClick={() => themeToggler()} type="checkbox" class="dn" id="dn" />
                         <label for="dn" class="toggle">
@@ -37,8 +39,11 @@ function App() {
                             <span className="star star--6"></span>
                         </label>
                     </div>
+                    <Accueil/>
                 </div>
-                
+                <div className='Test'>
+                    <BuyPage/>
+                </div>
             </StyledApp>
 
         </ThemeProvider>

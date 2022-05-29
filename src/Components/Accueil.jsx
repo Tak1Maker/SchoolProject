@@ -6,19 +6,17 @@ import Typewriter from 'typewriter-effect'
 export default function Accueil() {
   return (
       <>
-      <h1>Hello welcome to</h1>
+    
       <div id='TypeWriter'>
+        <h1>Hello welcome to</h1>
+        <video id='video' src={BackgroundVideo} autoPlay loop muted />
           <Typewriter
             onInit={(typewriter) => {
               typewriter
               .typeString("GrandeMotors")
               .pauseFor(1000)
-              .deleteAll()
-              .typeString("Le Boss")
               .start();
-              
             }}/>
-        <video id='video' src={BackgroundVideo} autoPlay loop muted />
       </div>
 
       </>

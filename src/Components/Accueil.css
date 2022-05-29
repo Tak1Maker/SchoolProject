@@ -6,20 +6,23 @@
 
 #TypeWriter, h1{
     position: relative;
+    text-align: center;
     font-family: 'Roboto', sans-serif; ;
     color: #e4e4e4;
     font-size: 70px;
-    top: 100px;
+}
+h1{
+    top: 200px;
 }
 #TypeWriter{
-    bottom: 40px;
+    top: 140px;
 }
 #video{
     object-fit: cover;
     width: 100vw;
     height: 100vh;
-    position: fixed;
-    top: 0;
+    position: static;
+    bottom: 500px;
     left: 0;
     z-index: -1;
 }
