@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import './Card.css'
-import { Kawasaki } from './Kawasaki'
+import './Kawa.css'
+import { Kawasaki } from './KawasakiContent'
 
 
 class KawasakiCards extends Component {
@@ -10,7 +10,6 @@ class KawasakiCards extends Component {
                 {Kawasaki.map((kawasaki) => {
                     return (
                         <div class="card">
-
                             <div class="imgBox">
                                 <img src={kawasaki.photo} alt={kawasaki.name} class="photo" />
                             </div>
@@ -18,7 +17,7 @@ class KawasakiCards extends Component {
                             <div class="contentBox">
                                 <h3>{kawasaki.name}</h3>
                                 <h2 class="price">{kawasaki.prix}</h2>
-                                <a href="#" class="buy">Acheter</a>
+                                <a href="test" class="buy">Acheter</a>
                             </div>
 
                         </div>

@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
 
 .card {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    width: 320px;
+    width: 320px;   
     height: 480px;
     background: #191919;
     border-radius: 20px;
@@ -48,13 +50,7 @@
 
 .card .imgBox img {
     max-width: 100%;
-    
     transition: .5s;
-}
-
-.card:hover .imgBox img {
-    max-width: 50%;
-      
 }
 
 .card .contentBox {
@@ -90,7 +86,7 @@
     margin-top: 15px;
     color: #000000;
     text-decoration: none;
-    background: #ffce00;
+    background: green;
     border-radius: 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
